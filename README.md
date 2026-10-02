@@ -1,2 +1,32 @@
-# EcoChiNext-Downloads
-EcoChi Next: Arduino downloads, adventure guide, and research measurement evidence. Not a medical device.
+# EcoChi Next｜下載、遊戲教學與測量依據
+
+真實環境就是遊戲控制器。ESP32 離線冒險掌機，結合環境記錄、形狀辨認及傾斜中心控制。
+
+本區只提供下載與使用文件，不含玩家存檔、評測歷史或受試資料。
+
+> **研究用工程原型，不是醫療裝置。**任務表現不能判定大腦健康、腦齡、失智風險或疾病。反應時間尚未端到端校準；健康成人信度與效度尚未驗證。
+
+## 下載與開始
+
+版本：**0.13.0-observe**。適用 ESP32-WROOM-32，不適用 ESP32-S3。
+
+- [下載版本與完整 Arduino 程式包](https://github.com/Benson0875/EcoChiNext-Downloads/releases/latest)
+- [安裝與燒錄](docs/installation.md)
+- [版本與下載 SHA-256](docs/download-integrity.md)
+- [遊戲操作與第一章攻略](docs/game-guide.md)
+- [兩個評測遊戲、即時結果與離線網頁](docs/assessment-guide.md)
+- [測量依據、指標與限制](docs/measurement-evidence.md)
+
+程式包解壓後，開啟 **EcoChiNext/EcoChiNext.ino**，並保留同資料夾內所有 `.h` 與 `.cpp`。`.ino` 是入口，不是單獨可執行的安裝檔。
+
+## 這版可以做什麼？
+
+五個相連區域的溪谷修復冒險；出生附近可直接找記錄員及平衡教練。各條件結束後掌機立即顯示任務結果，再嘗試保存。電腦或手機加入掌機離線 Wi-Fi，可查看環境、任務、評測品質与歷史，下載 CSV、列印報告；不需要雲端帳號。
+
+沒有 SD 仍可玩冒險、練習並查看即時練習結果，但不保存正式評測歷史。沒有感測器不阻擋冒險；傾斜測驗需要有效 GY-61 校正。
+
+## 驗證狀態
+
+此版本已有 Arduino 編譯、主機流程／存檔／文字邊界及模擬網頁測試紀錄，也曾燒錄並取得版本開機回報。主機模擬與編譯成功不等於實體操作、Wi-Fi 連線、真實 SD 斷電或人體研究驗證完成。
+
+**尚未實機驗證完整流程；尚無人體信度、效度及常模。**請先進行個別硬體驗收，不直接用於診斷或研究招募。
